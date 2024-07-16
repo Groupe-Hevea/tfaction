@@ -12,9 +12,9 @@ outputs:
 runs:
   using: composite
   steps:
-    - uses: suzuki-shunsuke/tfaction/get-global-config@pr/1740
+    - uses: NikitaCoeur/tfaction/get-global-config@test-pr/1740
       id: global-config
-    - uses: suzuki-shunsuke/tfaction/get-target-config@pr/1740
+    - uses: NikitaCoeur/tfaction/get-target-config@test-pr/1740
       id: target-config
       env:
         TFACTION_JOB_TYPE: scaffold_working_dir

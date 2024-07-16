@@ -11,12 +11,12 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: suzuki-shunsuke/tfaction/get-target-config@pr/1740
+    - uses: NikitaCoeur/tfaction/get-target-config@test-pr/1740
       id: target-config
-    - uses: suzuki-shunsuke/tfaction/get-global-config@pr/1740
+    - uses: NikitaCoeur/tfaction/get-global-config@test-pr/1740
       id: global-config
 
-    - uses: suzuki-shunsuke/tfaction/check-terraform-skip@pr/1740
+    - uses: NikitaCoeur/tfaction/check-terraform-skip@test-pr/1740
       id: check-terraform-skip
       if: "! env.TFACTION_DRIFT_ISSUE_NUMBER"
       with:
